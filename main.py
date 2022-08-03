@@ -39,6 +39,7 @@ def find_user_level(company_id, program_id, user_data):
             trigger = r['response']['trigger']
             if trigger not in completed_triggers_list:
                 return level
+    return 'All levels completed'
 
 
 completed_level = find_user_level(company_id, program_id, user_data)
